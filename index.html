@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daniel Aharon | DevOps Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/Logo-Bar.png" type="image/jpeg" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="images/My-Photo.jpeg" alt="Daniel Aharon" class="profile-pic" />
+      <h1>Daniel Aharon</h1>
+      <p class="subtitle">DevOps Engineer</p>
+
+      <div class="social-links">
+        <a href="https://github.com/Daniel-Aharon" target="_blank" title="GitHub" aria-label="GitHub">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="icon" />
+        </a>
+        <a href="https://linkedin.com/in/daniel-aharon5" target="_blank" title="LinkedIn" aria-label="LinkedIn">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="icon" />
+        </a>
+        <a href="My-Resume.pdf" target="_blank" title="Download Resume" aria-label="Resume">
+          <img src="https://img.icons8.com/material-outlined/48/000000/open-resume.png" alt="Resume" class="icon" />
+        </a>
+      </div>
+
+      <nav class="nav-links">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <section id="about" class="section-card">
+        <h2>About Me</h2>
+        <div class="summary">
+          <h3>Professional Summary</h3>
+          <p>
+            DevOps Engineer with practical knowledge in automation and cloud infrastructure. Proficient in Docker, Kubernetes, and CI/CD implementation with Jenkins, complemented by Python and Bash scripting capabilities.
+          </p>
+          <p>
+            Familiar with Infrastructure as Code using Terraform and Ansible for AWS resource management. Committed to continuous learning and building scalable, resilient infrastructure in collaborative environments.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects" class="section-card">
+        <h2>Projects</h2>
+        <div class="project-card">
+          <h3>DevOps Portfolio Project</h3>
+          <p>
+            This project demonstrates a modern DevOps pipeline for deploying a containerized Flask web application. The infrastructure is provisioned on AWS using Terraform as Infrastructure as Code (IaC). The application runs inside Docker containers on EC2 instances. Continuous Integration and Continuous Deployment (CI/CD) are automated with GitHub Actions, ensuring streamlined updates and deployments.
+          </p>
+          <p class="tech-label">Technologies used:</p>
+          <div class="tech-icons">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS" title="AWS" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform" title="Terraform" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Actions" title="GitHub Actions" />
+          </div>
+          <a href="https://github.com/Daniel-Aharon/Scalable-Web-App-Deployment-with-Docker-and-AWS.git" target="_blank" class="btn-link">
+            View Code on GitHub
+          </a>
+        </div>
+      </section>
+
+      <section id="skills" class="section-card">
+        <h2>Skills</h2>
+        <div class="skills">
+          <span>AWS</span>
+          <span>Docker</span>
+          <span>Terraform</span>
+          <span>Linux</span>
+          <span>GitHub Actions</span>
+          <span>Prometheus &amp; Grafana</span>
+          <span>Bash &amp; Python</span>
+          <span>Jenkins</span>
+          <span>Ansible</span>
+          <span>Kubernetes</span>
+        </div>
+      </section>
+
+      <section id="certifications" class="section-card">
+        <h2>Certifications</h2>
+        <ul>
+          <li>AWS Certified Solutions Architect – Associate (in progress)</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="section-card">
+        <h2>Contact</h2>
+        <p>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Gmail" class="contact-icon" />
+          <a href="mailto:danielaharon53@gmail.com">danielaharon53@gmail.com</a>
+        </p>
+        <p>📍 Herzliya, Tel Aviv District, Israel</p>
+      </section>
+    </main>
+  </div>
+  <button id="backToTop" title="Back to Top">↑</button>
+  <script>
+  const backToTopButton = document.getElementById('backToTop');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopButton.classList.add('show');
+    } else {
+      backToTopButton.classList.remove('show');
+    }
+  });
+
+  backToTopButton.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+</body>
+</html>
