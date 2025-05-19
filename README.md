@@ -28,14 +28,6 @@ This is my personal portfolio website, built with **HTML**, **CSS**, and a bit o
 
 ---
 
-## 📁 Project Structure
-MY-PORTFOLIO/
-├── index.html
-├── style.css
-├── My-Resume.pdf
-├── images/
-│ ├── Logo-Bar.png
-│ └── My-Photo.jpeg
 
 ## 📦 Deployment Steps (Manual)
 
